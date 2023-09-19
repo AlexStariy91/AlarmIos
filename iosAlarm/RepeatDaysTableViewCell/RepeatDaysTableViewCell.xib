@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="RepeatDaysTableViewCell" rowHeight="45" id="KGk-i7-Jjw" customClass="RepeatDaysTableViewCell" customModule="iosAlarm" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fhd-b5-z57">
+                        <rect key="frame" x="285.66666666666669" y="12.999999999999998" width="18.333333333333314" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Jul-e6-Ogy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJ3-V4-1yr">
+                        <rect key="frame" x="16" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ayN-dw-HlZ">
+                        <rect key="frame" x="16" y="44" width="304" height="1"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="kLK-bR-kpP"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCq-Xt-baL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="ivJ-t5-c1k"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ayN-dw-HlZ" secondAttribute="trailing" id="9oH-oC-6eU"/>
+                    <constraint firstItem="RJ3-V4-1yr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Buy-Fz-usK"/>
+                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="RJ3-V4-1yr" secondAttribute="trailing" constant="262" id="Ffw-rF-JLn"/>
+                    <constraint firstAttribute="bottom" secondItem="ayN-dw-HlZ" secondAttribute="bottom" id="NDb-eO-9fF"/>
+                    <constraint firstAttribute="trailing" secondItem="fhd-b5-z57" secondAttribute="trailing" constant="16" id="PIT-ws-o8i"/>
+                    <constraint firstItem="QCq-Xt-baL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PKl-MJ-S9I"/>
+                    <constraint firstItem="fhd-b5-z57" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10.666666666666668" id="VJc-tL-2lr"/>
+                    <constraint firstAttribute="bottom" secondItem="fhd-b5-z57" secondAttribute="bottom" constant="10.333333333333329" id="Vjg-HO-cP7"/>
+                    <constraint firstItem="RJ3-V4-1yr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ccd-48-Y76"/>
+                    <constraint firstItem="QCq-Xt-baL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="dSN-h2-Sti"/>
+                    <constraint firstItem="QCq-Xt-baL" firstAttribute="trailing" secondItem="ayN-dw-HlZ" secondAttribute="trailing" id="feG-fv-SzG"/>
+                    <constraint firstAttribute="bottom" secondItem="RJ3-V4-1yr" secondAttribute="bottom" constant="12" id="gZE-QV-lm1"/>
+                    <constraint firstItem="ayN-dw-HlZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="zLU-P1-JJy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.17254901959999999" green="0.17254901959999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="highlightView" destination="QCq-Xt-baL" id="HTK-eM-sfE"/>
+                <outlet property="selectedDayCheckmark" destination="fhd-b5-z57" id="UFf-W8-KDD"/>
+                <outlet property="separator" destination="ayN-dw-HlZ" id="fCY-8H-bnB"/>
+                <outlet property="titleOfDay" destination="RJ3-V4-1yr" id="sXS-7f-uzG"/>
+            </connections>
+            <point key="canvasLocation" x="19.847328244274809" y="-11.619718309859156"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

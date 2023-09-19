@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SelectSoundTableViewCell" rowHeight="45" id="KGk-i7-Jjw" customClass="SelectSoundTableViewCell" customModule="iosAlarm" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tC-oK-6JO">
+                        <rect key="frame" x="16" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FiC-9I-Dqc">
+                        <rect key="frame" x="285.66666666666669" y="12.999999999999998" width="18.333333333333314" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="mcP-Cp-FH2"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8W9-eF-poT">
+                        <rect key="frame" x="16" y="44" width="304" height="1"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="hRo-tf-UHq"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIn-cx-Mad">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="QOl-RF-0ne"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8W9-eF-poT" secondAttribute="trailing" id="0mG-pJ-WXL"/>
+                    <constraint firstItem="8W9-eF-poT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4Yy-Lg-goa"/>
+                    <constraint firstItem="JIn-cx-Mad" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4ct-K5-CZs"/>
+                    <constraint firstAttribute="bottom" secondItem="JIn-cx-Mad" secondAttribute="bottom" id="93W-cw-hMb"/>
+                    <constraint firstAttribute="trailing" secondItem="FiC-9I-Dqc" secondAttribute="trailing" constant="16" id="GGl-84-aeC"/>
+                    <constraint firstAttribute="bottom" secondItem="8W9-eF-poT" secondAttribute="bottom" id="HNY-oL-wN3"/>
+                    <constraint firstItem="JIn-cx-Mad" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="IM6-9Y-lVt"/>
+                    <constraint firstAttribute="trailing" secondItem="JIn-cx-Mad" secondAttribute="trailing" id="Nqe-dR-ljg"/>
+                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="8tC-oK-6JO" secondAttribute="trailing" constant="262" id="WV3-tR-Kvl"/>
+                    <constraint firstAttribute="bottom" secondItem="8tC-oK-6JO" secondAttribute="bottom" constant="12" id="XLV-hO-SjX"/>
+                    <constraint firstAttribute="bottom" secondItem="FiC-9I-Dqc" secondAttribute="bottom" constant="10.333333333333329" id="bg5-8E-i6t"/>
+                    <constraint firstItem="8tC-oK-6JO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="clJ-Mh-KkG"/>
+                    <constraint firstItem="FiC-9I-Dqc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10.666666666666666" id="dgj-fH-APF"/>
+                    <constraint firstItem="8tC-oK-6JO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="y2G-8s-0E7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.17254901960784313" green="0.17254901960784313" blue="0.1803921568627451" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="highlightView" destination="JIn-cx-Mad" id="j68-GO-EHj"/>
+                <outlet property="selectedSoundCheckMark" destination="FiC-9I-Dqc" id="bqc-WA-ehf"/>
+                <outlet property="separator" destination="8W9-eF-poT" id="g86-7O-xcg"/>
+                <outlet property="soundTitle" destination="8tC-oK-6JO" id="wvA-7c-TOI"/>
+            </connections>
+            <point key="canvasLocation" x="19.847328244274809" y="-11.619718309859156"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
