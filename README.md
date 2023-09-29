@@ -1,6 +1,6 @@
 # AlarmIos
 Alarm for iOS
-Has almost the same UI as Apple built-in alarm based on local notifications.
+Has almost the same UI as Apple built-in alarm. Alarm firing based on local notifications.
 
 - Add, Delete, Edit one shot or repeating alarm.
 - Snooze
