@@ -1,11 +1,11 @@
 # AlarmIos
 Alarm for iOS
-Has almost the same UI as Apple built-in alarm. Alarm firing based on local notifications.
+Has almost the same UI as Apple's built-in alarm. Alarm firing based on local notifications.
 
-- Add, Delete, Edit one shot or repeating alarm.
+- Add, Delete, Edit one-shot or repeating alarm.
 - Snooze
-- Choose local ringtone for alarm
+- Choose a local ringtone for the alarm
 
-If phone in "Do not disturb" mode, there will be no sound.
+If the phone is in "Do not disturb" mode, there will be no sound.
 
-Notification sound have a maximum duration of 30 seconds.
+Notification sounds have a maximum duration of 30 seconds.
